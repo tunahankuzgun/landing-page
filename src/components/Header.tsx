@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header className="bg-primaryColour w-full px-6 max-sm:hidden">
       <div className="max-w-[1240px] w-full h-10 mx-auto flex flex-row justify-between items-center">
-        <div className="flex h-4 w-[388px] justify-between">
+        <div className="flex h-4 gap-2 items-center">
           <svg
             className="w-3 top-3"
             xmlns="http://www.w3.org/2000/svg"
@@ -14,16 +14,17 @@ export default function Header() {
             <path d="M13 7.4C13 10.9346 7 17 7 17C7 17 1 10.9346 1 7.4C1 3.86538 3.68629 1 7 1C10.3137 1 13 3.86538 13 7.4Z" />
             <path d="M7 8.19998C7.41422 8.19998 7.75 7.84182 7.75 7.39998C7.75 6.95815 7.41422 6.59998 7 6.59998C6.58578 6.59998 6.25 6.95815 6.25 7.39998C6.25 7.84182 6.58578 8.19998 7 8.19998Z" />
           </svg>
-          <div className="w-[368px] font-normal text-[13.3px] text-left">
+          <p className="font-normal text-[13.3px] leading-[22px] text-left">
             Lorem Ipsum has been the industry's standard dummy
-          </div>
+          </p>
         </div>
         <div className="flex h-4 flex-row">
-          <div className="mr-8 h-4 w-[108px] flex justify-between">
+          <div className="mr-[57px] gap-1.5 h-4 flex justify-between">
             <svg
               className="w-4 h-4"
-              viewBox="0 0 16 16"
               fill="none"
+              viewBox="0 0 16 16"
+              strokeWidth="1.2"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -31,13 +32,11 @@ export default function Header() {
                 fill="white"
               />
             </svg>
-            <div className="w-[86px] font-poppins h-[9px] text-[13.3px] items-center">
-              +90123 45 67
-            </div>
+            <p className="h-[9px] text-[13.3px] text-right">+90123 45 67</p>
           </div>
-          <div className="h-[11.2px] w-[129px] flex justify-between">
+          <div className="h-[11.2px] gap-[7px] flex justify-between  items-center">
             <svg
-              className="w-4 h-[11.2px] items-center"
+              className="w-4 h-[11.2px]"
               viewBox="0 0 18 13"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -53,9 +52,12 @@ export default function Header() {
                 strokeWidth="1.2"
               />
             </svg>
-            <div className="w-[106px] font-poppins text-[13.3px] text-right top-[15px]">
+            <p
+              className=" leading-[22px] decoration-skip-none text-[13.3px] text-right"
+              style={{ textUnderlinePosition: "from-font" }}
+            >
               mail@mail.com
-            </div>
+            </p>
           </div>
         </div>
       </div>
