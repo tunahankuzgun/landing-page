@@ -1,10 +1,10 @@
 export default function Navbar() {
   return (
-    <div className="h-[80px] relati bg-white flex flex-row justify-center items-center">
-      <div className=" max-w-[1440px] pl-[100px] pr-[100px] w-full flex flex-row items-center justify-between">
+    <div className="h-[80px] relative bg-white flex flex-row justify-center items-center">
+      <div className=" max-w-[1240px] w-full flex flex-row items-center justify-between">
         <nav>
-          <ul className="flex flex-row gap-8">
-            <li className="text-navbarTextColor px-4 py-[13px] font-medium bg-[rgba(67,97,238,0.3)] rounded-[30px] flex items-center">
+          <ul className="flex flex-row gap-[10px]">
+            <li className="text-navbarTextColor text-base px-4 py-[13px] font-medium bg-[rgba(67,97,238,0.3)] rounded-[30px] flex items-center">
               <button type="button">
                 <h5>Home</h5>
               </button>
@@ -50,7 +50,9 @@ export default function Navbar() {
                 />
               </svg>
             </div>
-            <div className="text-[#1E1E1E] font-semibold text-xl">Logo</div>
+            <div className="text-[#1E1E1E] leading-[30px] font-semibold text-[20px]">
+              Logo
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-5">

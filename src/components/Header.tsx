@@ -32,7 +32,9 @@ export default function Header() {
                 fill="white"
               />
             </svg>
-            <p className="h-[9px] text-[13.3px] text-right">+90123 45 67</p>
+            <p className="h-[9px] text-[13.3px] leading-[22px] text-right">
+              +90123 45 67
+            </p>
           </div>
           <div className="h-[11.2px] gap-[7px] flex justify-between  items-center">
             <svg

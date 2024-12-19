@@ -1,4 +1,6 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -11,7 +13,10 @@ function App() {
             <div className="mx-auto max-w-[1440px] w-full h-[902px] rounded-b-full overflow-hidden bg-custom-gradient"></div>
           </div>
           <Navbar />
+          <Hero />
         </div>
+
+        <Footer />
       </div>
     </>
   );
