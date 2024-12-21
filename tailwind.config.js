@@ -40,6 +40,7 @@ export default {
         section1Shadow: "4px 10px 30px 0px rgba(0, 0, 0, 0.06)",
         hotelShadow: "4px 10px 30px 0px rgba(0, 0, 0, 0.15)",
         blogShadow: "10px 10px 30px 0px rgba(0, 0, 0, 0.2)",
+        calendarShadow: "4px 4px 15px 0px rgba(0, 0, 0, 0.25)",
       },
       lineHeight: {
         26: "26px",
