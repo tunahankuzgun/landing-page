@@ -4,27 +4,27 @@ export default function Navbar() {
       <div className=" max-w-[1240px] w-full flex flex-row items-center justify-between">
         <nav>
           <ul className="flex flex-row gap-[10px]">
-            <li className="text-navbarTextColor text-base px-4 py-[13px] font-medium bg-[rgba(67,97,238,0.3)] rounded-[30px] flex items-center">
+            <li className="text-textColor2 text-base max-h-[37px] px-4 py-[13px] font-medium bg-[rgba(67,97,238,0.3)] rounded-[30px] flex items-center">
               <button type="button">
                 <h5>Home</h5>
               </button>
             </li>
-            <li className="text-base text-navbarTextColor rounded-[30px] flex items-center">
+            <li className="text-base text-textColor2 rounded-[30px] flex items-center">
               <button type="button">
                 <h5>About</h5>
               </button>
             </li>
-            <li className="text-base text-navbarTextColor rounded-[30px] flex items-center">
+            <li className="text-base text-textColor2 rounded-[30px] flex items-center">
               <button type="button">
                 <h5>Listings</h5>
               </button>
             </li>
-            <li className="text-base text-navbarTextColor rounded-[30px] flex items-center">
+            <li className="text-base text-textColor2 rounded-[30px] flex items-center">
               <button type="button">
                 <h5>Services</h5>
               </button>
             </li>
-            <li className="text-base text-navbarTextColor rounded-[30px] flex items-center">
+            <li className="text-base text-textColor2 rounded-[30px] flex items-center">
               <button type="button">
                 <h5>Blogs</h5>
               </button>
@@ -58,13 +58,14 @@ export default function Navbar() {
         <div className="flex items-center gap-5">
           <button
             type="button"
-            className="text-navbarTextColor gap-[10px] h-[11px] items-center font-medium text-base flex"
+            className="text-textColor2 gap-[10px] h-[11px] items-center font-medium text-base flex"
           >
             <svg
               className="w-[18px] h-[18px]"
               viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              strokeWidth="1.6"
             >
               <path
                 d="M5.5 14.5C5.5 12.0147 7.51472 10 10 10C12.4853 10 14.5 12.0147 14.5 14.5"

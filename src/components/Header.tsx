@@ -18,7 +18,7 @@ export default function Header() {
             Lorem Ipsum has been the industry's standard dummy
           </p>
         </div>
-        <div className="flex h-4 flex-row">
+        <div className="flex h-4 flex-row items-center">
           <div className="mr-[57px] gap-1.5 h-4 flex justify-between">
             <svg
               className="w-4 h-4"
@@ -32,11 +32,11 @@ export default function Header() {
                 fill="white"
               />
             </svg>
-            <p className="h-[9px] text-[13.3px] leading-[22px] text-right">
+            <p className="text-[13.3px] leading-[22px] text-right">
               +90123 45 67
             </p>
           </div>
-          <div className="h-[11.2px] gap-[7px] flex justify-between  items-center">
+          <div className="gap-[7px] flex items-center">
             <svg
               className="w-4 h-[11.2px]"
               viewBox="0 0 18 13"
@@ -54,10 +54,7 @@ export default function Header() {
                 strokeWidth="1.2"
               />
             </svg>
-            <p
-              className=" leading-[22px] decoration-skip-none text-[13.3px] text-right"
-              style={{ textUnderlinePosition: "from-font" }}
-            >
+            <p className=" leading-[22px] decoration-skip-none text-[13.3px] text-right">
               mail@mail.com
             </p>
           </div>
