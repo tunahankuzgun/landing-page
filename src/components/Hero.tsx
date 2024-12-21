@@ -24,7 +24,7 @@ export default function Hero() {
               <div className="relative">
                 <img
                   className="rounded-[20px]"
-                  src="../public/images/hotel1.jfif"
+                  src="src\assets\images\hotel1.jfif"
                 />
                 <div className="bg-white shadow-imageShadow w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -left-5 absolute">
                   <svg
@@ -186,20 +186,20 @@ export default function Hero() {
         <div className="flex bg-[#D9D9D9] shadow-hotelShadow rounded-[30px] mt-[180px] w-[280px] h-[500px]">
           <img
             className="rounded-[30px] object-cover"
-            src="../public/images/hotel2.jpeg"
+            src="src\assets\images\hotel2.jpeg"
           />
         </div>
         <div>
           <div className="bg-[#D9D9D9] flex shadow-hotelShadow rounded-[30px] ml-5 mt-[133px] h-[280px] w-[277px]">
             <img
               className="rounded-[30px] object-cover"
-              src="../public/images/hotel3.jpeg"
+              src="src\assets\images\hotel3.jpeg"
             />
           </div>
           <div className="bg-[#D9D9D9] flex shadow-hotelShadow rounded-[30px] ml-5 mt-5 h-[180px] w-[277px]">
             <img
               className="rounded-[30px] flex-1 object-cover"
-              src="../public/images/hotel4.jpeg"
+              src="src\assets\images\hotel4.jpeg"
             />
           </div>
         </div>
@@ -237,7 +237,7 @@ export default function Hero() {
             {/* TODO */}
             <img
               className="rounded-[30px] h-[340px] w-[340px] object-cover"
-              src="../public/images/house1.jpeg"
+              src="src\assets\images\house1.jpeg"
             />
             <div className="absolute flex gap-[10px] left-[30px] bottom-[30px] bg-[#FFE1E1] rounded-[20px] px-6 py-[10px]">
               <svg
@@ -307,7 +307,7 @@ export default function Hero() {
           <div className="max-h-[340px] relative rounded-[30px] w-[340px]">
             <img
               className="rounded-[30px] h-[340px] w-[340px] object-cover"
-              src="../public/images/house2.jpeg"
+              src="src\assets\images\house2.jpeg"
             />
             <div className="absolute items-center flex gap-[10px] left-[30px] bottom-[30px] bg-[#D7EEFF] rounded-[20px] px-6 py-[10px]">
               <svg
@@ -373,7 +373,7 @@ export default function Hero() {
           <div className="max-h-[340px] relative rounded-[30px] w-[340px]">
             <img
               className="rounded-[30px] h-[340px] w-[340px] object-cover"
-              src="../public/images/house3.jpeg"
+              src="src\assets\images\house3.jpeg"
             />
             <div className="absolute flex gap-[10px] left-[30px] bottom-[30px] bg-[#F1FFF1] rounded-[20px] px-6 py-[10px]">
               <svg
@@ -440,7 +440,7 @@ export default function Hero() {
           <div className="max-h-[340px] relative rounded-[30px] w-[340px]">
             <img
               className="rounded-[30px] h-[340px] w-[340px] object-cover"
-              src="../public/images/house4.jpeg"
+              src="src\assets\images\house4.jpeg"
             />
             <div className="absolute flex gap-[10px] left-[30px] bottom-[30px] bg-[#FFE1E1] rounded-[20px] px-6 py-[10px]">
               <svg

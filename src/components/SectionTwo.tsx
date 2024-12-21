@@ -14,7 +14,7 @@ export default function SectionTwo() {
               <div className="rounded-[30px] relative w-[340px] h-[240px]">
                 <img
                   className="rounded-[30px]"
-                  src="../public/images/blog1.jpeg"
+                  src="src\assets\images\blog1.jpeg"
                 />
                 <div className="bg-white shadow-calendarShadow flex flex-col gap-[5px] p-[10px] text-center left-[50px] absolute rounded-b-[10px] top-0">
                   <h4 className="text-textColor2 max-h-[14px] text-19.4 leading-29.1 font-medium">
@@ -38,7 +38,7 @@ export default function SectionTwo() {
               <div className="rounded-[30px] relative w-[340px] h-[240px]">
                 <img
                   className="rounded-[30px]"
-                  src="../public/images/blog2.jpeg"
+                  src="src\assets\images\blog2.jpeg"
                 />
                 <div className="bg-white shadow-calendarShadow text-center w-[55px] max-h-[50px] left-[50px] absolute rounded-b-[10px] top-0">
                   <h4 className="text-textColor2 text-19.4 leading-29.1 font-medium">
@@ -61,7 +61,7 @@ export default function SectionTwo() {
               <div className="rounded-[30px] relative w-[340px] h-[240px]">
                 <img
                   className="rounded-[30px] bg-layered-gradient shadow-blogShadow"
-                  src="../public/images/blog3.jpeg"
+                  src="src\assets\images\blog3.jpeg"
                 />
                 {/* @TODO */}
                 <div className="bg-white shadow-calendarShadow text-center w-[57px] max-h-[50px] left-[50px] absolute rounded-b-[10px] top-0">
