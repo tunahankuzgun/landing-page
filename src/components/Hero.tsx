@@ -60,9 +60,8 @@ export default function Hero() {
             <div className="text-black flex justify-center">sa</div>
           </div>
         </div>
-        <div className="shadow-formShadow flex flex-col w-full max-w-[420px] h-[582px] mt-[124px] rounded-[30px] bg-white ">
-          <form></form>
-          <div className="px-10 shadow-formShadow  h-[80px] flex  rounded-t-[20px] border-b-[1px] border-textColor4 bg-white ">
+        <div className="shadow-formShadow flex flex-col w-full max-w-[420px] mt-[124px] rounded-[30px]">
+          <div className="px-10 shadow-formShadow h-[80px] flex rounded-t-[20px] border-b-[1px] border-textColor4 bg-white ">
             <button className="flex-1 border-b-[3px] border-primaryColour">
               <h5 className="font-medium text-center text-primaryColour">
                 For Sale
@@ -73,6 +72,130 @@ export default function Hero() {
                 For Rent
               </h5>
             </button>
+          </div>
+          <div className="shadow-formShadow flex flex-col w-full max-w-[420px] h-[502px] rounded-b-[30px] bg-white">
+            <form className="">
+              <input
+                className="w-[340px] h-[59px] text-formText bg-formBackground focus:outline-none  ml-10 mt-[50px] rounded-[20px] placeholder:text-formText text-[16px] leading-[26px] pl-5"
+                placeholder="New York, San Francisco, etc"
+              />
+              <div className="ml-10 flex relative mt-[30px] w-[340px]">
+                <select className="appearance-none pl-5  h-[59px] text-formText w-[340px] bg-formBackground rounded-[20px] focus:outline-none">
+                  <option className="" value="" selected disabled>
+                    Select Property Type
+                  </option>
+                  <option value="residential">Residential</option>
+                  <option value="commercial">Commercial</option>
+                  <option value="land">Land</option>
+                </select>
+                <svg
+                  className="absolute top-[25px] right-5 pointer-events-none"
+                  width="14"
+                  height="7"
+                  viewBox="0 0 14 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.58521 6.57766C7.23581 6.82982 6.76419 6.82982 6.41479 6.57767L0.848983 2.56089C0.0621447 1.99304 0.46384 0.750001 1.43419 0.750001L12.5658 0.75C13.5362 0.75 13.9379 1.99303 13.151 2.56088L7.58521 6.57766Z"
+                    fill="#AAAAAA"
+                  />
+                </svg>
+              </div>
+              <div className="ml-10 flex relative mt-[30px] w-[340px]">
+                <select className="appearance-none pl-5  h-[59px] text-formText w-[340px] bg-formBackground rounded-[20px] focus:outline-none">
+                  <option className="" value="" selected disabled>
+                    Select Rooms
+                  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="more">3+</option>
+                </select>
+                <svg
+                  className="absolute top-[25px] right-5 pointer-events-none"
+                  width="14"
+                  height="7"
+                  viewBox="0 0 14 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.58521 6.57766C7.23581 6.82982 6.76419 6.82982 6.41479 6.57767L0.848983 2.56089C0.0621447 1.99304 0.46384 0.750001 1.43419 0.750001L12.5658 0.75C13.5362 0.75 13.9379 1.99303 13.151 2.56088L7.58521 6.57766Z"
+                    fill="#AAAAAA"
+                  />
+                </svg>
+              </div>
+              <div className="ml-10 gap-[10px] items-center mt-5 flex text-primaryColour cursor-pointer">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.0256 14C11.7313 14 11.4872 13.7786 11.4872 13.5116V6.34883C11.4872 6.08185 11.7313 5.86046 12.0256 5.86046C12.32 5.86046 12.5641 6.08185 12.5641 6.34883V13.5116C12.5641 13.7786 12.32 14 12.0256 14Z"
+                    fill="#3A0CA3"
+                  />
+                  <path
+                    d="M12.0256 4.23256C11.7313 4.23256 11.4872 4.01116 11.4872 3.74419V0.488372C11.4872 0.221395 11.7313 0 12.0256 0C12.32 0 12.5641 0.221395 12.5641 0.488372V3.74419C12.5641 4.01116 12.32 4.23256 12.0256 4.23256Z"
+                    fill="#3A0CA3"
+                  />
+                  <path
+                    d="M7.00001 14C6.70565 14 6.46155 13.7786 6.46155 13.5116V10.2558C6.46155 9.98882 6.70565 9.76743 7.00001 9.76743C7.29437 9.76743 7.53847 9.98882 7.53847 10.2558V13.5116C7.53847 13.7786 7.29437 14 7.00001 14Z"
+                    fill="#3A0CA3"
+                  />
+                  <path
+                    d="M7.00001 8.13953C6.70565 8.13953 6.46155 7.91814 6.46155 7.65116V0.488372C6.46155 0.221395 6.70565 0 7.00001 0C7.29437 0 7.53847 0.221395 7.53847 0.488372V7.65116C7.53847 7.91814 7.29437 8.13953 7.00001 8.13953Z"
+                    fill="#3A0CA3"
+                  />
+                  <path
+                    d="M1.97434 14C1.67999 14 1.43588 13.7786 1.43588 13.5116V6.34883C1.43588 6.08185 1.67999 5.86046 1.97434 5.86046C2.2687 5.86046 2.51281 6.08185 2.51281 6.34883V13.5116C2.51281 13.7786 2.2687 14 1.97434 14Z"
+                    fill="#3A0CA3"
+                  />
+                  <path
+                    d="M1.97434 4.23256C1.67999 4.23256 1.43588 4.01116 1.43588 3.74419V0.488372C1.43588 0.221395 1.67999 0 1.97434 0C2.2687 0 2.51281 0.221395 2.51281 0.488372V3.74419C2.51281 4.01116 2.2687 4.23256 1.97434 4.23256Z"
+                    fill="#3A0CA3"
+                  />
+                  <path
+                    d="M3.41026 6.8372H0.538462C0.244103 6.8372 0 6.61581 0 6.34883C0 6.08185 0.244103 5.86046 0.538462 5.86046H3.41026C3.70462 5.86046 3.94872 6.08185 3.94872 6.34883C3.94872 6.61581 3.70462 6.8372 3.41026 6.8372Z"
+                    fill="#3A0CA3"
+                  />
+                  <path
+                    d="M13.4615 6.8372H10.5897C10.2954 6.8372 10.0513 6.61581 10.0513 6.34883C10.0513 6.08185 10.2954 5.86046 10.5897 5.86046H13.4615C13.7559 5.86046 14 6.08185 14 6.34883C14 6.61581 13.7559 6.8372 13.4615 6.8372Z"
+                    fill="#3A0CA3"
+                  />
+                  <path
+                    d="M8.43589 8.13952H5.5641C5.26974 8.13952 5.02563 7.91813 5.02563 7.65115C5.02563 7.38418 5.26974 7.16278 5.5641 7.16278H8.43589C8.73025 7.16278 8.97435 7.38418 8.97435 7.65115C8.97435 7.91813 8.73025 8.13952 8.43589 8.13952Z"
+                    fill="#3A0CA3"
+                  />
+                </svg>
+                <p className="text-[13.3px] leading-[22px]">Advance Search</p>
+              </div>
+              <button
+                type="button"
+                className="h-[59px] ml-10 mt-[61px] gap-[10px] w-[340px] bg-primaryColour items-center justify-center rounded-[50px] flex"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.53582 19.0716C4.27949 19.0716 0 14.7921 0 9.53582C0 4.27949 4.27949 0 9.53582 0C14.7921 0 19.0716 4.27949 19.0716 9.53582C19.0716 14.7921 14.7921 19.0716 9.53582 19.0716ZM9.53582 1.39549C5.04235 1.39549 1.39549 5.05166 1.39549 9.53582C1.39549 14.02 5.04235 17.6761 9.53582 17.6761C14.0293 17.6761 17.6761 14.02 17.6761 9.53582C17.6761 5.05166 14.0293 1.39549 9.53582 1.39549Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M19.3046 20.0019C19.1278 20.0019 18.951 19.9367 18.8115 19.7972L16.9508 17.9365C16.6811 17.6667 16.6811 17.2202 16.9508 16.9504C17.2206 16.6806 17.6672 16.6806 17.937 16.9504L19.7976 18.811C20.0674 19.0808 20.0674 19.5274 19.7976 19.7972C19.6581 19.9367 19.4813 20.0019 19.3046 20.0019Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <h5 className="font-medium ">Search</h5>
+              </button>
+            </form>
           </div>
         </div>
       </div>

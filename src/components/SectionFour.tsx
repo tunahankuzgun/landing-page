@@ -150,7 +150,7 @@ export default function SectionFour() {
             </h4>
             <div className="relative">
               <input
-                className="w-[350px] h-[60px] flex bg-white rounded-[30px] mt-[21px]  placeholder:text-textColor4 text-[16px] leading-[26px] pl-[20px] "
+                className="w-[350px] h-[60px] flex bg-white rounded-[30px] mt-[21px]  placeholder:text-textColor4 text-[16px] leading-[26px] focus:outline-none  pl-5 "
                 placeholder="Email Address"
                 type="email"
               />

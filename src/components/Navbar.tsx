@@ -3,7 +3,7 @@ export default function Navbar() {
     <div className="h-[80px] relative bg-white flex flex-row justify-center items-center">
       <div className=" max-w-[1240px] w-full flex flex-row items-center justify-between">
         <nav>
-          <ul className="flex flex-row gap-[10px]">
+          <ul className="flex flex-row gap-4">
             <li className="text-textColor2 text-base max-h-[37px] px-4 py-[13px] font-medium bg-[rgba(67,97,238,0.3)] rounded-[30px] flex items-center">
               <button type="button">
                 <h5>Home</h5>

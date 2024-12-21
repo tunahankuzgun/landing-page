@@ -12,6 +12,8 @@ export default {
         textColor4: "#AAAAAA",
         textColor5: "#D4D4D4",
         transparentBg: "rgba(67, 97, 238, 0.1)",
+        formBackground: "rgba(212, 212, 212, 0.2)",
+        formText: "rgba(109, 106, 117, 0.5)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
