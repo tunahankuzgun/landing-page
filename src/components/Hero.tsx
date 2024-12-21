@@ -233,7 +233,8 @@ export default function Hero() {
 
       <div className="flex flex-row gap-[50px] w-[1560px] mt-[50px] mb-[95px]">
         <div className="w-[340px] h-[500px]">
-          <div className="max-h-[340px] relative rounded-[30px] w-[340px]">
+          <div className="max-h-[340px] bg-custom-gradient-2 relative rounded-[30px] w-[340px]">
+            {/* TODO */}
             <img
               className="rounded-[30px] h-[340px] w-[340px] object-cover"
               src="../public/images/house1.jpeg"

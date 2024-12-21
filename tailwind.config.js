@@ -9,6 +9,7 @@ export default {
         textColor1: "#0B090A",
         textColor2: "#2B2B2B",
         textColor3: "#808080",
+        textColor5: "#D4D4D4",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -18,10 +19,6 @@ export default {
         39.8: "39.8px",
         27.6: "27.6px",
       },
-      lineHeight: {
-        29.1: "29.1px",
-        41.4: "41.4px",
-      },
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(180deg, rgba(76, 201, 240, 0), rgba(67, 97, 238, 0.3))",
@@ -29,15 +26,25 @@ export default {
           " linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%)",
         "photo-gradient":
           "linear-gradient(0deg, #D9D9D9, #D9D9D9),linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)",
+        "custom-gradient-2": `
+          linear-gradient(0deg, #D9D9D9, #D9D9D9),
+          linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)
+        `,
+        "layered-gradient": `
+          linear-gradient(0deg, #FFFFFF, #FFFFFF),
+          linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))`,
       },
       boxShadow: {
         formShadow: "10px 30px 50px 0px rgba(0, 0, 0, 0.05)",
         imageShadow: "10px 10px 40px 0px rgba(0, 0, 0, 0.2)",
         section1Shadow: "4px 10px 30px 0px rgba(0, 0, 0, 0.06)",
         hotelShadow: "4px 10px 30px 0px rgba(0, 0, 0, 0.15)",
+        blogShadow: "10px 10px 30px 0px rgba(0, 0, 0, 0.2)",
       },
       lineHeight: {
         26: "26px",
+        29.1: "29.1px",
+        41.4: "41.4px",
       },
     },
   },
