@@ -6,7 +6,7 @@ export default function SectionTwo() {
           <div className="h-[14px] text-19.4 w-full justify-center leading-29.1 text-center font-medium tracking-[0.15em] mt-[110px]">
             WHAT’S TRENDING
           </div>
-          <div className="w-full justify-center h-[28px] text-39.8 leading-[47px] text-center font-semibold mt-[30px]">
+          <div className="w-full justify-center h-[28px] text-39.8 leading-47 text-center font-semibold mt-[30px]">
             Latest Blogs & Posts
           </div>
           <div className="flex mt-[80px] w-full justify-center gap-[50px]">

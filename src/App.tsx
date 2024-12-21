@@ -2,6 +2,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import SectionFour from "./components/SectionFour";
+import SectionThree from "./components/SectionThree";
 import SectionTwo from "./components/SectionTwo";
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Navbar />
         <Hero />
         <SectionTwo />
+        <SectionThree />
+        <SectionFour />
         <Footer />
       </div>
     </>

@@ -28,7 +28,7 @@ export default function Hero() {
                 />
                 <div className="bg-white shadow-imageShadow w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -left-5 absolute">
                   <svg
-                    className="w-[6px] h-3 text-[#AAAAAA]"
+                    className="w-[6px] h-3 text-textColor4"
                     viewBox="0 0 8 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ export default function Hero() {
                 </div>
                 <div className="bg-white shadow-imageShadow rotate-180 w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -right-5 absolute">
                   <svg
-                    className="w-[6px] h-3 text-[#AAAAAA]"
+                    className="w-[6px] h-3 text-textColor4"
                     viewBox="0 0 8 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Hero() {
         </div>
         <div className="shadow-formShadow flex flex-col w-full max-w-[420px] h-[582px] mt-[124px] rounded-[30px] bg-white ">
           <form></form>
-          <div className="px-10 shadow-formShadow  h-[80px] flex  rounded-t-[20px] border-b-[1px] border-[#AAAAAA] bg-white ">
+          <div className="px-10 shadow-formShadow  h-[80px] flex  rounded-t-[20px] border-b-[1px] border-textColor4 bg-white ">
             <button className="flex-1 border-b-[3px] border-primaryColour">
               <h5 className="font-medium text-center text-primaryColour">
                 For Sale
@@ -101,7 +101,7 @@ export default function Hero() {
           <div className="text-color1 max-h-[14px] mt-[79px] font-medium text-19.4 text-left leading-29.1 tracking-[0.15em]">
             WHO ARE WE
           </div>
-          <h2 className="text-textColor2 mt-10 w-[500px] max-h-[122px] font-semibold text-39.8 text-left leading-[47px]">
+          <h2 className="text-textColor2 mt-10 w-[500px] max-h-[122px] font-semibold text-39.8 text-left leading-47">
             Assisting individuals in locating the appropriate real estate.
           </h2>
           <p className="text-textColor3 mt-[30px] leading-26 w-[500px] h-[63px]">
@@ -210,7 +210,7 @@ export default function Hero() {
           <div className="text-color1 mt-[200px] max-h-[14px] font-medium text-19.4 text-left leading-29.1 tracking-[0.15em]">
             CHECKOUT OUR NEW
           </div>
-          <h2 className="text-textColor2 mt-10 w-[466px] max-h-[28px] font-semibold text-39.8 text-left leading-[47px]">
+          <h2 className="text-textColor2 mt-10 w-[466px] max-h-[28px] font-semibold text-39.8 text-left leading-47">
             Latest Listed Properties
           </h2>
           <p className="text-textColor3 mt-[30px] leading-26 w-[500px] h-[37px]">
