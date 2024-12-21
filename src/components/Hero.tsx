@@ -20,13 +20,41 @@ export default function Hero() {
             </p>
           </div>
           <div className="mt-10  max-w-[540px]">
-            <div className="bg-ellipse-gradient left-0 rounded-full w-[60px] h-[60px] absolute opacity-50 rotate-[30deg]" />
             <div className="shadow-imageShadow rounded-[20px]">
-              <div className="">
+              <div className="relative">
                 <img
                   className="rounded-[20px]"
                   src="../public/images/hotel1.jfif"
                 />
+                <div className="bg-white shadow-imageShadow w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -left-5 absolute">
+                  <svg
+                    className="w-[6px] h-3 text-[#AAAAAA]"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 1L2.41421 5.58579C1.63317 6.36683 1.63316 7.63316 2.41421 8.41421L7 13"
+                      stroke="#AAAAAA"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </div>
+                <div className="bg-white shadow-imageShadow rotate-180 w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -right-5 absolute">
+                  <svg
+                    className="w-[6px] h-3 text-[#AAAAAA]"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 1L2.41421 5.58579C1.63317 6.36683 1.63316 7.63316 2.41421 8.41421L7 13"
+                      stroke="#AAAAAA"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </div>
+                <div className="bg-ellipse-gradient -top-[40px] -right-[30px] rounded-full w-[60px] h-[60px] absolute rotate-[30deg]" />
               </div>
             </div>
             <div className="text-black flex justify-center">sa</div>
@@ -478,6 +506,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      <div className="bg-ellipse-gradient bottom-0 -left-[100px] rounded-full w-[100px] h-[100px] absolute opacity-50 rotate-[-30deg]" />
     </div>
   );
 }
