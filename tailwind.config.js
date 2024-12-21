@@ -27,6 +27,8 @@ export default {
           "linear-gradient(180deg, rgba(76, 201, 240, 0), rgba(67, 97, 238, 0.3))",
         "ellipse-gradient":
           " linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%)",
+        "photo-gradient":
+          "linear-gradient(0deg, #D9D9D9, #D9D9D9),linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)",
       },
       boxShadow: {
         formShadow: "10px 30px 50px 0px rgba(0, 0, 0, 0.05)",
