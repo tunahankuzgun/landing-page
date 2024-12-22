@@ -235,7 +235,7 @@ export default function Hero() {
               </div>
               <div className="w-9 h-9 relative flex items-center justify-center">
                 <div className="absolute inset-0 bg-[#000000B2] border-[2px]  border-white rounded-full" />
-                {/* TODO : Do bg-gradients as shadows */}
+                {/* TODO : Do bg-gradients as shadows for photos */}
                 <img
                   className="rounded-full border-[2px]  border-white w-9 h-9 object-cover"
                   src="src\assets\images\customer5.jpeg"
