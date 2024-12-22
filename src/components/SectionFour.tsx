@@ -1,10 +1,10 @@
 export default function SectionFour() {
   return (
     <div className="relative mx-auto bg-transparentBg ">
-      <div className="relative w-full max-w-[1160px] mx-auto">
-        <div className="flex flex-row justify-between mt-">
-          <div className="mt-[82px] max-w-[285px] text-textColor2">
-            <div className="flex h-[50px] gap-2 items-center">
+      <div className="relative w-full max-w-[1160px] mx-auto max-lg:max-w-full">
+        <div className="flex flex-row justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:w-full">
+          <div className="mt-[82px] max-w-[285px] text-textColor2 max-lg:max-w-full max-lg:justify-center max-lg:mt-[60px] ">
+            <div className="flex h-[50px] gap-2 items-center max-lg:w-full max-lg:justify-center">
               <div className="w-[50px] h-[50px] rounded-full items-center flex justify-center bg-primaryColour">
                 <svg
                   className="w-6 h-6"
@@ -22,16 +22,16 @@ export default function SectionFour() {
                   />
                 </svg>
               </div>
-              <div className="font-semibold text-[20px] leading-[30px]">
+              <div className="font-semibold text-[20px] leading-[30px] max-lg: ">
                 Rezilla
               </div>
             </div>
-            <button className="mt-8 w-[385px] ">
-              <h5 className="font-medium text-left">
+            <button className="mt-8 w-[385px] max-lg:max-w-[244px] max-lg:justify-center max-lg:mt-[30px]">
+              <h5 className="font-medium text-left max-lg:text-base max-lg:text-center">
                 Lorem ipsum has been the industry standard dummy text
               </h5>
             </button>
-            <div className="mt-12 gap-2 h-4 flex ">
+            <div className="mt-12 gap-2 h-4 flex max-lg:w-full max-lg:justify-center max-lg:mt-[30px]">
               <svg
                 width="20"
                 height="20"
@@ -48,7 +48,7 @@ export default function SectionFour() {
                 <h5 className="hover:underline font-medium">+90123 45 67</h5>
               </button>
             </div>
-            <div className="mt-[30px] gap-[10px] items-center flex">
+            <div className="mt-[30px] gap-[10px] items-center flex max-lg:w-full max-lg:justify-center max-lg:mt-5">
               <svg
                 className="w-5 h-[14px]"
                 viewBox="0 0 22 16"
@@ -71,7 +71,7 @@ export default function SectionFour() {
               </button>
             </div>
           </div>
-          <div className="mt-[100px] mb-[105px] max-w-[134px] text-textColor2">
+          <div className="mt-[100px] mb-[105px] max-w-[134px] text-textColor2 max-lg:mb-0 max-lg:hidden">
             <h4 className="text-textColor1 font-semibold h-[14px] text-19.4 leading-29.1">
               Quick Links
             </h4>
@@ -110,7 +110,7 @@ export default function SectionFour() {
               </ul>
             </nav>
           </div>
-          <div className="mt-[100px]  max-w-[106px] text-textColor2">
+          <div className="mt-[100px]  max-w-[106px] text-textColor2 max-lg:hidden">
             <h4 className="text-textColor1 font-semibold text-19.4 h-[14px] leading-29.1 ">
               Discovery
             </h4>
@@ -144,8 +144,8 @@ export default function SectionFour() {
               </ul>
             </nav>
           </div>
-          <div className="mt-[100px] max-w-[350px] text-textColor2">
-            <h4 className="text-textColor1  max-w-[254px] font-semibold text-19.4 leading-29.1">
+          <div className="mt-[100px] max-w-[350px] text-textColor2 max-lg:mt-10 max-lg:max-w-full max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center">
+            <h4 className="text-textColor1 max-w-[254px] font-semibold text-19.4 leading-29.1 max-lg:max-w-[200px] max-lg:text-base max-lg:text-center">
               Subscribe to our Newsletter!
             </h4>
             <div className="relative">
@@ -154,7 +154,7 @@ export default function SectionFour() {
                 placeholder="Email Address"
                 type="email"
               />
-              <div className="bg-primaryColour h-[50px] cursor-pointer flex justify-center items-center w-[50px] rounded-full absolute right-[5px] inset-y-[5px]">
+              <div className="bg-primaryColour h-[50px] cursor-pointer flex justify-center items-center w-[50px] rounded-full absolute right-[5px] inset-y-[5px] max-lg:inset-y-[25px]">
                 <svg
                   width="17"
                   height="16"
@@ -169,11 +169,11 @@ export default function SectionFour() {
                 </svg>
               </div>
             </div>
-            <div className="mt-8 flex flex-col justify-between h-[67px]">
-              <h4 className="text-textColor1 font-semibold text-19.4 leading-29.1">
+            <div className="mt-8 flex flex-col justify-between h-[67px] max-lg:mb-[50px] max-lg:items-center max-lg:w-full ">
+              <h4 className="text-textColor1 font-semibold text-19.4 leading-29.1 max-lg:text-base">
                 Follow Us on
               </h4>
-              <div className="flex gap-5">
+              <div className="flex gap-5 max-lg:gap-10">
                 <svg
                   width="22"
                   height="22"

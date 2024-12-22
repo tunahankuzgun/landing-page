@@ -4,16 +4,16 @@ import "swiper/swiper-bundle.css";
 
 export default function Hero() {
   return (
-    <div className="relative w-full max-w-[1160px] mx-auto">
-      <div className=" w-full flex flex-row justify-between items-start">
-        <div className="">
-          <div className=" max-h-[14px] mt-[89px]">
-            <div className="text-color1 font-medium text-19.4 text-left leading-29.1 tracking-[0.15em]">
+    <div className="relative w-full max-w-[1160px] mx-auto max-lg:w-full max-lg:justify-center max-lg:items-center">
+      <div className=" w-full flex flex-row justify-between items-start max-lg:flex-col max-lg:items-center">
+        <div className="max-lg:items-center max-lg:justify-center">
+          <div className=" max-h-[14px] mt-[89px] max-lg:mt-[50px]">
+            <div className="text-color1 font-medium text-19.4 text-left leading-29.1 tracking-[0.15em] max-lg:w-full max-lg:text-base ">
               REAL ESTATE
             </div>
           </div>
           <div className="max-w-[580px] h-[105px] mt-[30px]">
-            <h1 className="text-textColor1 font-semibold leading-[65px] text-[57.3px]">
+            <h1 className="text-textColor1 font-semibold leading-[65px] text-[57.3px] max-lg:text-39.8 max-lg:leading-[47px] max-lg:w-[333px]">
               Find a perfect home you love..!
             </h1>
           </div>
