@@ -1,3 +1,7 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/swiper-bundle.css";
+
 export default function Hero() {
   return (
     <div className="relative w-full max-w-[1160px] mx-auto">
@@ -22,13 +26,9 @@ export default function Hero() {
           <div className="mt-10  max-w-[540px]">
             <div className="shadow-imageShadow rounded-[20px]">
               <div className="relative">
-                <img
-                  className="rounded-[20px]"
-                  src="src\assets\images\hotel1.jfif"
-                />
-                <div className="bg-white shadow-imageShadow w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -left-5 absolute">
+                <div className="bg-white swiper-prev z-10 shadow-imageShadow w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -left-5 absolute">
                   <svg
-                    className="w-[6px] h-3 text-textColor4"
+                    className="w-[6px] h- text-textColor4"
                     viewBox="0 0 8 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,58 @@ export default function Hero() {
                     />
                   </svg>
                 </div>
-                <div className="bg-white shadow-imageShadow rotate-180 w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -right-5 absolute">
+                <Swiper
+                  className="h-[340px] rounded-[20px]"
+                  init={false}
+                  navigation={{
+                    nextEl: ".swiper-next",
+                    prevEl: ".swiper-prev",
+                  }}
+                  pagination={{
+                    clickable: true,
+                    el: ".pagination1",
+                    bulletActiveClass: "swiper1-paginationActive",
+                    bulletClass: "swiper1-pagination ",
+                    renderBullet: (_index, className) => {
+                      return (
+                        '<span class="!w-full !rounded-[4px] !mx-5 ' +
+                        className +
+                        '"></span>'
+                      );
+                    },
+                  }}
+                  loop={true}
+                  modules={[Navigation, Pagination]}
+                  spaceBetween={50}
+                  slidesPerView={1}
+                >
+                  <SwiperSlide className="">
+                    <img
+                      className="rounded-[20px]"
+                      src="src\assets\images\hotel1.jfif"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      className="rounded-[20px]"
+                      src="src\assets\images\hotel2.jpeg"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      className="rounded-[20px]"
+                      src="src\assets\images\hotel3.jpeg"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      className="rounded-[20px]"
+                      src="src\assets\images\hotel4.jpeg"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+
+                <div className="bg-white swiper-next shadow-imageShadow z-10 rotate-180 w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -right-5 absolute">
                   <svg
                     className="w-[6px] h-3 text-textColor4"
                     viewBox="0 0 8 14"
@@ -57,12 +108,7 @@ export default function Hero() {
                 <div className="bg-ellipse-gradient -top-[40px] -right-[30px] rounded-full w-[60px] h-[60px] absolute rotate-[30deg]" />
               </div>
             </div>
-            <div className="mt-[11px] w-[515px] flex justify-between ">
-              <div className=" w-[100px] h-0 border-[2px] border-color1 rounded-full"></div>
-              <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50"></div>
-              <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50"></div>
-              <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50"></div>
-            </div>
+            <div className="pagination1 mt-[11px] w-[515px] flex justify-between" />
           </div>
         </div>
         <div className="shadow-formShadow flex flex-col w-full max-w-[420px] mt-[124px] rounded-[30px]">

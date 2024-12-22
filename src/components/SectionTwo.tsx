@@ -1,3 +1,7 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/swiper-bundle.css";
+
 export default function SectionTwo() {
   return (
     <div className="relative mx-auto bg-primaryColour">
@@ -9,82 +13,146 @@ export default function SectionTwo() {
           <div className="w-full justify-center h-[28px] text-39.8 leading-47 text-center font-semibold mt-[30px]">
             Latest Blogs & Posts
           </div>
-          <div className="flex mt-[80px] w-full justify-center gap-[50px]">
-            <div>
-              <div className="rounded-[30px] relative w-[340px] h-[240px]">
-                <img
-                  className="rounded-[30px]"
-                  src="src\assets\images\blog1.jpeg"
-                />
-                <div className="bg-white shadow-calendarShadow flex flex-col gap-[5px] p-[10px] text-center left-[50px] absolute rounded-b-[10px] top-0">
-                  <h4 className="text-textColor2 max-h-[14px] text-19.4 leading-29.1 font-medium">
-                    28
-                  </h4>
-                  <p className="text-textColor3 h-[11px] text-[16px] leading-26">
-                    Tue
-                  </p>
+          <Swiper
+            className="w-[1160px] flex"
+            init={false}
+            navigation={{
+              nextEl: ".swiper2-next",
+              prevEl: ".swiper2-prev",
+            }}
+            pagination={{
+              clickable: true,
+              el: ".pagination2",
+              bulletActiveClass: "swiper2-paginationActive",
+              bulletClass: "swiper2-pagination ",
+              renderBullet: (_index, className) => {
+                return (
+                  '<span class="!w-full !rounded-[4px] !mx-5 ' +
+                  className +
+                  '"></span>'
+                );
+              },
+            }}
+            loop={true}
+            modules={[Navigation, Pagination]}
+            spaceBetween={50}
+            slidesPerView={3}
+          >
+            <div className="flex w-full justify-center gap-[50px]">
+              <SwiperSlide>
+                <div>
+                  <div className="rounded-[30px] mt-[80px] relative w-[340px] h-[240px]">
+                    <img
+                      className="rounded-[30px]"
+                      src="src\assets\images\blog1.jpeg"
+                    />
+                    <div className="bg-white shadow-calendarShadow flex flex-col gap-[5px] p-[10px] text-center left-[50px] absolute rounded-b-[10px] top-0">
+                      <h4 className="text-textColor2 max-h-[14px] text-19.4 leading-29.1 font-medium">
+                        28
+                      </h4>
+                      <p className="text-textColor3 h-[11px] text-[16px] leading-26">
+                        Tue
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-[30px]">
+                    <h3 className="w-[340px] font-medium text-27.6 leading-41.4 ">
+                      Top 10 Home Buying Mistakes to Avoid
+                    </h3>
+                    <p className="mt-4 w-[340px] text-textColor5 leading-26">
+                      Etiam eget elementum elit. Aenean dignissim dapibus
+                      vestibulum
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="mt-[30px]">
-                <h3 className="w-[340px] font-medium text-27.6 leading-41.4 ">
-                  Top 10 Home Buying Mistakes to Avoid
-                </h3>
-                <p className="mt-4 w-[340px] text-textColor5 leading-26">
-                  Etiam eget elementum elit. Aenean dignissim dapibus vestibulum
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="rounded-[30px] relative w-[340px] h-[240px]">
-                <img
-                  className="rounded-[30px]"
-                  src="src\assets\images\blog2.jpeg"
-                />
-                <div className="bg-white shadow-calendarShadow text-center w-[55px] max-h-[50px] left-[50px] absolute rounded-b-[10px] top-0">
-                  <h4 className="text-textColor2 text-19.4 leading-29.1 font-medium">
-                    08
-                  </h4>
-                  <p className="text-textColor3 text-[16px] leading-26">Mon</p>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <div className="rounded-[30px] mt-[80px] relative w-[340px] h-[240px]">
+                    <img
+                      className="rounded-[30px]"
+                      src="src\assets\images\blog2.jpeg"
+                    />
+                    <div className="bg-white shadow-calendarShadow text-center w-[55px] max-h-[50px] left-[50px] absolute rounded-b-[10px] top-0">
+                      <h4 className="text-textColor2 text-19.4 leading-29.1 font-medium">
+                        08
+                      </h4>
+                      <p className="text-textColor3 text-[16px] leading-26">
+                        Mon
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-[30px]">
+                    <h3 className="w-[340px] font-medium text-27.6 leading-41.4 ">
+                      How to Stage Your Home for a Quick Sale
+                    </h3>
+                    <p className="mt-4 w-[340px] text-textColor5 leading-26">
+                      Nullam odio lacus, dictum quis pretium congue, vehicula
+                      venenatis nunc.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="mt-[30px]">
-                <h3 className="w-[340px] font-medium text-27.6 leading-41.4 ">
-                  How to Stage Your Home for a Quick Sale
-                </h3>
-                <p className="mt-4 w-[340px] text-textColor5 leading-26">
-                  Nullam odio lacus, dictum quis pretium congue, vehicula
-                  venenatis nunc.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="rounded-[30px] relative w-[340px] h-[240px]">
-                <img
-                  className="rounded-[30px] bg-layered-gradient shadow-blogShadow"
-                  src="src\assets\images\blog3.jpeg"
-                />
-                {/* @TODO */}
-                <div className="bg-white shadow-calendarShadow text-center w-[57px] max-h-[50px] left-[50px] absolute rounded-b-[10px] top-0">
-                  <h4 className="text-textColor2 text-19.4 leading-29.1 font-medium">
-                    26
-                  </h4>
-                  <p className="text-textColor3 text-[16px] leading-26">Wed</p>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <div className="rounded-[30px] mt-[80px] relative w-[340px] h-[240px]">
+                    <img
+                      className="rounded-[30px] bg-layered-gradient shadow-blogShadow"
+                      src="src\assets\images\blog3.jpeg"
+                    />
+                    {/* @TODO */}
+                    <div className="bg-white shadow-calendarShadow text-center w-[57px] max-h-[50px] left-[50px] absolute rounded-b-[10px] top-0">
+                      <h4 className="text-textColor2 text-19.4 leading-29.1 font-medium">
+                        26
+                      </h4>
+                      <p className="text-textColor3 text-[16px] leading-26">
+                        Wed
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-[30px]">
+                    <h3 className="w-[340px] font-medium text-27.6 leading-41.4 ">
+                      5 Tips for First-Time Home Sellers
+                    </h3>
+                    <p className="mt-4 w-[340px] text-textColor5 leading-26">
+                      In hac habitasse platea dictumst. Phasellus vel velit vel
+                      augue maximus.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="mt-[30px]">
-                <h3 className="w-[340px] font-medium text-27.6 leading-41.4 ">
-                  5 Tips for First-Time Home Sellers
-                </h3>
-                <p className="mt-4 w-[340px] text-textColor5 leading-26">
-                  In hac habitasse platea dictumst. Phasellus vel velit vel
-                  augue maximus.
-                </p>
-              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <div className="rounded-[30px] mt-[80px] relative w-[340px] h-[240px]">
+                    <img
+                      className="rounded-[30px]"
+                      src="src\assets\images\blog2.jpeg"
+                    />
+                    <div className="bg-white shadow-calendarShadow text-center w-[55px] max-h-[50px] left-[50px] absolute rounded-b-[10px] top-0">
+                      <h4 className="text-textColor2 text-19.4 leading-29.1 font-medium">
+                        08
+                      </h4>
+                      <p className="text-textColor3 text-[16px] leading-26">
+                        Mon
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-[30px]">
+                    <h3 className="w-[340px] font-medium text-27.6 leading-41.4 ">
+                      How to Stage Your Home for a Quick Sale
+                    </h3>
+                    <p className="mt-4 w-[340px] text-textColor5 leading-26">
+                      Nullam odio lacus, dictum quis pretium congue, vehicula
+                      venenatis nunc.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
             </div>
-          </div>
+          </Swiper>
           <div className="flex w-full mt-[30px] justify-center">
             <div className="w-[440px] flex justify-between">
-              <div className="w-[50px] bg-white rounded-full h-[50px] flex items-center justify-center">
+              <div className="w-[50px] swiper2-prev cursor-pointer bg-white rounded-full h-[50px] flex items-center justify-center">
                 <svg
                   className="text-primaryColour"
                   width="22"
@@ -99,7 +167,7 @@ export default function SectionTwo() {
                   />
                 </svg>
               </div>
-              <div className="w-[50px] bg-white rounded-full rotate-180 h-[50px] flex items-center justify-center">
+              <div className="w-[50px] swiper2-next cursor-pointer bg-white rounded-full rotate-180 h-[50px] flex items-center justify-center">
                 <svg
                   className="text-primaryColour"
                   width="22"
@@ -116,10 +184,8 @@ export default function SectionTwo() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mb-[100px] w-full gap-[39px] mt-[70px]">
-            <div className=" w-[100px] h-0 border-[2px] border-white rounded-full" />
-            <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50" />
-            <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50" />
+          <div className="flex w-full mb-[100px] justify-center mt-[70px]">
+            <div className="flex justify-between items-center pagination2 !w-[516px] "></div>
           </div>
         </div>
       </div>

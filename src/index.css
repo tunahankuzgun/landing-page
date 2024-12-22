@@ -5,3 +5,27 @@
 body {
   @apply font-poppins;
 }
+
+.swiper1-pagination {
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.swiper1-paginationActive {
+  height: 4px;
+  background-color: #4361ee;
+  opacity: 1 !important;
+}
+
+.swiper2-pagination {
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.swiper2-paginationActive {
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 1 !important;
+}
