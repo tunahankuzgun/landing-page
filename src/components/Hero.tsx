@@ -319,11 +319,12 @@ export default function Hero() {
               src="src\assets\images\hotel3.jpeg"
             />
           </div>
-          <div className="bg-[#D9D9D9] flex shadow-hotelShadow rounded-[30px] ml-5 mt-5 h-[180px] w-[277px]">
+          <div className="bg-[#D9D9D9] flex shadow-hotelShadow rounded-[30px] ml-5 mt-5 h-[180px] w-[277px] relative">
             <img
               className="rounded-[30px] flex-1 object-cover"
               src="src\assets\images\hotel4.jpeg"
             />
+            <div className="bg-ellipse-gradient -bottom-[40px] left-[70px] rounded-full w-[60px] h-[60px] absolute opacity-50 rotate-[30deg]" />
           </div>
         </div>
       </div>
@@ -559,7 +560,9 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="w-[340px] h-[500px]">
+        <div className=" relative w-[340px] h-[500px]">
+          <div className="bg-ellipse-gradient -bottom-[180px] right-[466px] rounded-full w-[100px] h-[100px] absolute opacity-50 rotate-[-30deg]" />
+
           <div className="max-h-[340px] relative rounded-[30px] w-[340px]">
             <img
               className="rounded-[30px] h-[340px] w-[340px] object-cover"
@@ -630,7 +633,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="bg-ellipse-gradient bottom-0 -left-[100px] rounded-full w-[100px] h-[100px] absolute opacity-50 rotate-[-30deg]" />
     </div>
   );
 }
