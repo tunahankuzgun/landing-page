@@ -29,3 +29,16 @@ body {
   background-color: #ffffff;
   opacity: 1 !important;
 }
+
+.swiper3-pagination {
+  height: 4px;
+  width: 2rem !important;
+  background-color: #aaaaaa;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.swiper3-paginationActive {
+  height: 4px;
+  background-color: #808080;
+  opacity: 1 !important;
+}
