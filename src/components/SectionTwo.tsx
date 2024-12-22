@@ -46,11 +46,11 @@ export default function SectionTwo() {
                       className="rounded-[30px]"
                       src="src\assets\images\blog1.jpeg"
                     />
-                    <div className="bg-white shadow-calendarShadow flex flex-col gap-[5px] p-[10px] text-center left-[50px] absolute rounded-b-[10px] top-0">
-                      <h4 className="text-textColor2 max-h-[14px] text-19.4 leading-29.1 font-medium">
+                    <div className="bg-white shadow-calendarShadow p-[10px] text-center left-[50px] absolute rounded-b-[10px] top-0">
+                      <h4 className="text-textColor2 text-19.4 leading-[1rem] font-medium">
                         28
                       </h4>
-                      <p className="text-textColor3 h-[11px] text-[16px] leading-26">
+                      <p className="text-textColor3 leading-[1rem] text-[16px]">
                         Tue
                       </p>
                     </div>

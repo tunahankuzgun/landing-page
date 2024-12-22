@@ -50,9 +50,9 @@ export default function SectionThree() {
             </div>
           </div>
           <div className=" mt-[160px]">
-            <div className="w-[500px] flex shadow-section3Shadow h-[358px] rounded-[30px] mb-[104px] z-10 relative">
-              <div className="flex">
-                <div className="bg-ellipse-gradient -top-[30px] -left-[30px] rounded-full w-[60px] h-[60px] absolute opacity-50 rotate-[-30deg] z-[-1]" />
+            <div className="w-[500px] flex h-[358px] mb-[104px] z-10 relative">
+              <div className="bg-ellipse-gradient -top-[30px] -left-[30px] rounded-full w-[60px] h-[60px] absolute opacity-50 rotate-[-30deg] z-[-1]" />
+              <div className="flex shadow-section3Shadow rounded-[30px] bg-white">
                 <Swiper
                   className="w-full flex justify-center items-center"
                   init={false}

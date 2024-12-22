@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
-    <div className="h-[80px] relative bg-white flex flex-row justify-center items-center">
-      <div className=" max-w-[1240px] w-full flex flex-row items-center justify-between">
+    <div className="h-[80px] relative lg:bg-white flex flex-row justify-center items-center">
+      <div className=" max-w-[1300px] px-[30px] w-full flex flex-row items-center justify-between">
         <nav className="max-lg:hidden">
           <ul className="flex flex-row gap-4">
             <li className="text-textColor2 text-base max-h-[37px] px-4 py-[13px] font-medium bg-[rgba(67,97,238,0.3)] rounded-[30px] flex items-center">
@@ -32,7 +32,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <div>
-          <div className="h-[50px] flex gap-2 items-center max-lg:ml-[30px]">
+          <div className="h-[50px] flex gap-2 items-center">
             <div className="w-[50px] h-[50px] rounded-full bg-[#3A0CA3] flex">
               <svg
                 className="w-6 h-6 m-auto"
@@ -106,7 +106,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        <div className="cursor-pointer mr-[30px] lg:hidden">
+        <div className="cursor-pointer lg:hidden">
           <svg
             width="24"
             height="22"

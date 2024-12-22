@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="bg-primaryColour w-full px-6 max-lg:hidden">
+    <header className="bg-primaryColour w-full px-[30px] max-lg:hidden">
       <div className="max-w-[1240px] w-full h-10 mx-auto flex flex-row justify-between items-center">
         <div className="flex h-4 gap-2 items-center">
           <svg
@@ -36,7 +36,7 @@ export default function Header() {
               +90123 45 67
             </p>
           </div>
-          <div className="gap-[7px] flex items-center">
+          <div className="gap-[7px] mr-8 flex items-center">
             <svg
               className="w-4 h-[11.2px]"
               viewBox="0 0 18 13"

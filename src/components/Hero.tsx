@@ -4,29 +4,29 @@ import "swiper/swiper-bundle.css";
 
 export default function Hero() {
   return (
-    <div className="relative w-full max-w-[1160px] mx-auto max-lg:w-full max-lg:justify-center max-lg:items-center">
-      <div className=" w-full flex flex-row justify-between items-start max-lg:flex-col max-lg:items-center">
+    <div className="relative px-[30px] w-full max-w-[1180px] mx-auto max-lg:w-full">
+      <div className=" w-full lg:flex flex-row justify-between items-start">
         <div className="max-lg:items-center max-lg:justify-center">
-          <div className=" max-h-[14px] mt-[89px] max-lg:mt-[50px]">
+          <div className="mt-10 lg:mt-[89px] ">
             <div className="text-color1 font-medium text-19.4 text-left leading-29.1 tracking-[0.15em] max-lg:w-full max-lg:text-base ">
               REAL ESTATE
             </div>
           </div>
-          <div className="max-w-[580px] h-[105px] mt-[30px]">
-            <h1 className="text-textColor1 font-semibold leading-[65px] text-[57.3px] max-lg:text-39.8 max-lg:leading-[47px] max-lg:w-[333px]">
+          <div className="mt-2 lg:max-w-[580px] lg:mt-[30px]">
+            <h1 className="text-textColor1 font-semibold text-39.8 leading-[47px] lg:leading-[65px] lg:text-[57.3px]">
               Find a perfect home you love..!
             </h1>
           </div>
-          <div className="max-w-[580px] mt-10 leading-26 h-[37px]  ">
+          <div className="max-w-[580px] mt-4 leading-26  ">
             <p className="text-textColor3">
               Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500s, when an unknown printer took a galley
             </p>
           </div>
-          <div className="mt-10  max-w-[540px]">
+          <div className="mt-8 lg:max-w-[540px]">
             <div className="shadow-imageShadow rounded-[20px]">
               <div className="relative">
-                <div className="bg-white swiper-prev z-10 shadow-imageShadow w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -left-5 absolute">
+                <div className="bg-white swiper-prev z-10 shadow-imageShadow w-10 flex items-center justify-center h-10 rounded-full inset-y-1/2 -mt-5 cursor-pointer left-1 lg:-left-5 absolute">
                   <svg
                     className="w-[6px] h- text-textColor4"
                     viewBox="0 0 8 14"
@@ -41,7 +41,7 @@ export default function Hero() {
                   </svg>
                 </div>
                 <Swiper
-                  className="h-[340px] rounded-[20px]"
+                  className="rounded-[20px] lg:h-[340px]"
                   init={false}
                   navigation={{
                     nextEl: ".swiper-next",
@@ -80,18 +80,18 @@ export default function Hero() {
                   <SwiperSlide>
                     <img
                       className="rounded-[20px]"
-                      src="src\assets\images\hotel3.jpeg"
+                      src="src\assets\images\hotel1.jfif"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <img
                       className="rounded-[20px]"
-                      src="src\assets\images\hotel4.jpeg"
+                      src="src\assets\images\hotel2.jpeg"
                     />
                   </SwiperSlide>
                 </Swiper>
 
-                <div className="bg-white swiper-next shadow-imageShadow z-10 rotate-180 w-10 flex items-center justify-center h-10 rounded-full inset-y-[170px] cursor-pointer -right-5 absolute">
+                <div className="bg-white swiper-next shadow-imageShadow z-10 rotate-180 w-10 flex items-center justify-center h-10 rounded-full inset-y-1/2 -mt-5 cursor-pointer right-1 lg:-right-5 absolute">
                   <svg
                     className="w-[6px] h-3 text-textColor4"
                     viewBox="0 0 8 14"
@@ -111,7 +111,7 @@ export default function Hero() {
             <div className="pagination1 mt-[11px] w-[515px] flex justify-between" />
           </div>
         </div>
-        <div className="shadow-formShadow flex flex-col w-full max-w-[420px] mt-[124px] rounded-[30px]">
+        <div className=" flex flex-col w-full lg:max-w-[420px] mt-10 lg:mt-[174px]  rounded-[30px]">
           <div className="px-10 shadow-formShadow h-[80px] flex rounded-t-[20px] border-b-[1px] border-textColor4 bg-white ">
             <button className="flex-1 border-b-[3px] border-primaryColour">
               <h5 className="font-medium text-center text-primaryColour">
@@ -124,16 +124,16 @@ export default function Hero() {
               </h5>
             </button>
           </div>
-          <div className="shadow-formShadow flex flex-col w-full max-w-[420px] h-[502px] rounded-b-[30px] bg-white">
+          <div className="shadow-formShadow p-10 lg:flex flex-col w-full lg:max-w-[420px] rounded-b-[30px] bg-white">
             <form className="">
               <input
-                className="w-[340px] h-[59px] text-formText bg-formBackground focus:outline-none  ml-10 mt-[50px] rounded-[20px] placeholder:text-formText text-[16px] leading-[26px] pl-5"
+                className="w-full h-[59px] text-formText bg-formBackground focus:outline-none rounded-[20px] placeholder:text-formText text-[16px] leading-[26px] pl-5"
                 placeholder="New York, San Francisco, etc"
               />
-              <div className="ml-10 flex relative mt-[30px] w-[340px]">
+              <div className="flex relative mt-[30px] w-full">
                 <select
                   defaultValue={""}
-                  className="appearance-none pl-5  h-[59px] text-formText w-[340px] bg-formBackground rounded-[20px] focus:outline-none"
+                  className="appearance-none pl-5  h-[59px] text-formText w-full bg-formBackground rounded-[20px] focus:outline-none"
                 >
                   <option className="" value="" disabled>
                     Select Property Type
@@ -156,10 +156,10 @@ export default function Hero() {
                   />
                 </svg>
               </div>
-              <div className="ml-10 flex relative mt-[30px] w-[340px]">
+              <div className="flex relative mt-[30px] w-full">
                 <select
                   defaultValue={""}
-                  className="appearance-none pl-5  h-[59px] text-formText w-[340px] bg-formBackground rounded-[20px] focus:outline-none"
+                  className="appearance-none pl-5  h-[59px] text-formText w-full bg-formBackground rounded-[20px] focus:outline-none"
                 >
                   <option className="" value="" disabled>
                     Select Rooms
@@ -182,7 +182,7 @@ export default function Hero() {
                   />
                 </svg>
               </div>
-              <div className="ml-10 gap-[10px] items-center mt-5 flex text-primaryColour cursor-pointer">
+              <div className="gap-[10px] items-center mt-5 flex text-primaryColour cursor-pointer">
                 <svg
                   width="14"
                   height="14"
@@ -231,7 +231,7 @@ export default function Hero() {
               </div>
               <button
                 type="button"
-                className="h-[59px] ml-10 mt-[61px] gap-[10px] w-[340px] bg-primaryColour items-center justify-center rounded-[50px] flex"
+                className="h-[59px] mt-8 lg:mt-12 gap-[10px] w-full bg-primaryColour items-center justify-center rounded-[50px] flex"
               >
                 <svg
                   width="20"
@@ -257,7 +257,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex flex-row flex-wrap justify-center mt-[30px] items-center gap-[30px]">
-        <div className="w-[360px] flex justify-center  shadow-formShadow h-[100px] rounded-[50px] bg-white">
+        <div className="w-full lg:w-[360px] flex justify-center  shadow-formShadow h-[100px] rounded-[50px] bg-white">
           <div className="w-[287px] flex items-center gap-[10px] justify-center">
             <div className="w-[155px] text-black flex space-x-[-10px]">
               <div className="w-9 h-9">
@@ -303,21 +303,21 @@ export default function Hero() {
                 </h4>
               </div>
             </div>
-            <h4 className="text-textColor2 font-semibold text-19.4 w-[122px] leading-29.1 ">
+            <h4 className="text-textColor2 font-medium text-19.4 w-[122px] leading-29.1 ">
               72k+ Happy Customers
             </h4>
           </div>
         </div>
-        <div className="w-[320px] flex shadow-formShadow h-[100px] justify-center rounded-[50px] bg-white">
-          <div className="w-[244px] flex items-center justify-center gap-[10px]">
+        <div className="w-full lg:w-[320px] flex shadow-formShadow h-[100px] justify-center rounded-[50px] bg-white">
+          <div className="w-[274px] lg:w-[244px] max-lg:text-base flex items-center justify-center gap-5 lg:gap-[10px]">
             <div className="w-[60px] h-[60px]">
               <img
                 className="rounded-full border-[2px] border-white h-[60px] w-[60px] object-cover"
                 src="src\assets\images\homeIcon.jpeg"
               />
             </div>
-            <div className=" w-[174px] ">
-              <h4 className="text-textColor2 font-semibold text-19.4leading-29.1">
+            <div className="w-[174px] ">
+              <h4 className="text-textColor2 font-medium text-19.4 leading-29.1">
                 200+ New Listings Everyday!
               </h4>
             </div>
@@ -326,20 +326,20 @@ export default function Hero() {
       </div>
       <div className="bg-ellipse-gradient top-[835px] -left-[100px] rounded-full w-[100px] h-[100px] absolute opacity-50 rotate-[-30deg]" />
 
-      <div className=" flex justify-between flex-row">
-        <div className="flex flex-col">
-          <div className="text-color1 max-h-[14px] mt-[79px] font-medium text-19.4 text-left leading-29.1 tracking-[0.15em]">
+      <div className=" lg:flex flex-row">
+        <div className="flex flex-col flex-1">
+          <div className="text-color1 mt-[79px] font-medium text-19.4 text-left leading-29.1 tracking-[0.15em] max-lg:text-base ">
             WHO ARE WE
           </div>
-          <h2 className="text-textColor2 mt-10 w-[500px] max-h-[122px] font-semibold text-39.8 text-left leading-47">
+          <h2 className="text-textColor2 mt-2 lg:mt-5 w-full lg:max-w-[500px] font-semibold text-39.8 text-left leading-47 max-lg:text-27.6 max-lg:leading-41.4">
             Assisting individuals in locating the appropriate real estate.
           </h2>
-          <p className="text-textColor3 mt-[30px] leading-26 w-[500px] h-[63px]">
+          <p className="text-textColor3 mt-5 leading-26 w-full lg:max-w-[500px]">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
             scrambled it
           </p>
-          <div className="flex mt-10">
+          <div className="flex mt-10 max-lg:hidden">
             <div className="bg-white shadow-section1Shadow ml-[1px] flex justify-around items-center rounded-[30px] w-[400px] h-[131px]">
               <div>
                 <svg
@@ -376,7 +376,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="flex mt-10">
+          <div className="flex mt-10 max-lg:hidden">
             <div className="bg-white shadow-section1Shadow ml-[1px] flex justify-around items-center rounded-[30px] w-[400px] h-[131px]">
               <div>
                 <svg
@@ -413,25 +413,102 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex bg-[#D9D9D9] shadow-hotelShadow rounded-[30px] mt-[180px] w-[280px] h-[500px]">
-          <img
-            className="rounded-[30px] object-cover"
-            src="src\assets\images\hotel2.jpeg"
-          />
-        </div>
-        <div>
-          <div className="bg-[#D9D9D9] flex shadow-hotelShadow rounded-[30px] ml-5 mt-[133px] h-[280px] w-[277px]">
-            <img
-              className="rounded-[30px] object-cover"
-              src="src\assets\images\hotel3.jpeg"
-            />
+        <div className="flex flex-1 max-lg:mt-10 max-h-[600px]">
+          <div className="flex-1">
+            <div className="flex lg:ml-5 bg-[#D9D9D9] shadow-hotelShadow rounded-[30px] h-full max-h-[500px] mt-[47px] lg:mt-[190px]">
+              <img
+                className="rounded-[30px] object-cover"
+                src="src\assets\images\hotel2.jpeg"
+              />
+            </div>
           </div>
-          <div className="bg-[#D9D9D9] flex shadow-hotelShadow rounded-[30px] ml-5 mt-5 h-[180px] w-[277px] relative">
-            <img
-              className="rounded-[30px] flex-1 object-cover"
-              src="src\assets\images\hotel4.jpeg"
-            />
-            <div className="bg-ellipse-gradient -bottom-[40px] left-[70px] rounded-full w-[60px] h-[60px] absolute opacity-50 rotate-[30deg]" />
+          <div className="flex-1 flex flex-col">
+            <div className="bg-[#D9D9D9] flex flex-1 shadow-hotelShadow rounded-[30px] ml-5 lg:mt-[143px]">
+              <img
+                className="rounded-[30px] object-cover"
+                src="src\assets\images\hotel3.jpeg"
+              />
+            </div>
+            <div className="bg-[#D9D9D9] flex flex-1 shadow-hotelShadow rounded-[30px] ml-5 mt-5 relative">
+              <img
+                className="rounded-[30px] flex-1 object-cover"
+                src="src\assets\images\hotel4.jpeg"
+              />
+              <div className="bg-ellipse-gradient -bottom-[40px] left-[70px] rounded-full w-[60px] h-[60px] absolute opacity-50 rotate-[30deg]" />
+            </div>
+          </div>
+        </div>
+        <div className="lg:hidden flex mt-10 ">
+          <div className="bg-white shadow-section1Shadow ml-[1px] flex justify-around items-center rounded-[30px] w-[400px] h-[131px]">
+            <div>
+              <svg
+                className="w-10 h-10 text-color1"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.531 38.8724H19.1277C18.3736 38.8724 17.7483 38.2471 17.7483 37.493C17.7483 36.7389 18.3736 36.1136 19.1277 36.1136H30.531C32.499 36.1136 34.4301 34.4765 34.7612 32.5269L37.2074 17.8867C37.4281 16.5625 36.6926 14.6679 35.6626 13.8402L22.9165 3.651C21.4451 2.47389 18.999 2.47387 17.546 3.63259L4.8001 13.8402C3.75174 14.6863 3.03444 16.5625 3.25514 17.8867L3.77013 20.9949C3.89888 21.7489 3.38391 22.4662 2.62982 22.5766C1.87574 22.7237 1.17685 22.1904 1.0481 21.4363L0.533113 18.3465C0.146873 16.0659 1.25043 13.1415 3.07128 11.6885L15.8172 1.48061C18.2817 -0.505767 22.1624 -0.487356 24.6454 1.49902L37.3913 11.6885C39.1938 13.1415 40.2973 16.0659 39.9295 18.3465L37.4833 32.9867C36.9315 36.2421 33.8232 38.8724 30.531 38.8724Z"
+                  fill="#4361EE"
+                />
+                <path
+                  d="M7.35738 39.2221C6.60329 39.2221 5.99634 38.6151 5.97795 37.8794C5.92277 35.3964 4.28587 33.7595 1.80291 33.7043C1.04882 33.686 0.441854 33.0606 0.460246 32.2881C0.478638 31.5341 1.08559 30.9455 1.83967 30.9455H1.87644C5.8308 31.0375 8.66324 33.8515 8.7368 37.8058C8.7552 38.5599 8.14823 39.2037 7.39415 39.2221C7.37575 39.2221 7.37577 39.2221 7.35738 39.2221Z"
+                  fill="#4361EE"
+                />
+                <path
+                  d="M12.8751 39.222C12.121 39.222 11.4956 38.6151 11.4956 37.861C11.4772 36.6471 11.2749 35.4884 10.9071 34.4032C9.96906 31.7179 7.9643 29.7314 5.27901 28.775C4.19386 28.3887 3.03515 28.1866 1.82125 28.1866C1.06716 28.1866 0.441842 27.5612 0.460235 26.7888C0.460235 26.0347 1.08557 25.4277 1.83966 25.4277H1.85805C3.38462 25.4461 4.8376 25.7036 6.19863 26.1818C9.67479 27.4141 12.2681 30.0074 13.5004 33.4836C13.9786 34.8446 14.2361 36.316 14.2545 37.8242C14.2545 38.5967 13.6476 39.222 12.8751 39.222Z"
+                  fill="#4361EE"
+                />
+                <path
+                  d="M1.83924 39.6819C0.809264 39.6819 0 38.8542 0 37.8427C0 36.8311 0.827656 36.0034 1.83924 36.0034C2.85082 36.0034 3.67847 36.8311 3.67847 37.8427C3.67847 38.8542 2.86921 39.6819 1.83924 39.6819Z"
+                  fill="#4361EE"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 className="text-color1 font-medium text-19.4 leading-29.1">
+                Lorem ipsum has been the
+              </h4>
+              <p className="text-textColor3 max-w-[274px] leading-26">
+                when an unknown printer took a galley
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="lg:hidden flex mt-10 ">
+          <div className="bg-white shadow-section1Shadow ml-[1px] flex justify-around items-center rounded-[30px] w-[400px] h-[131px]">
+            <div>
+              <svg
+                className="w-10 h-11"
+                viewBox="0 0 44 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M42 16.4855V31.5433C42 34.0089 40.6791 36.2984 38.5437 37.5532L25.4672 45.1041C23.3318 46.3369 20.6901 46.3369 18.5327 45.1041L5.45625 37.5532C3.32086 36.3204 2 34.0309 2 31.5433V16.4855C2 14.0199 3.32086 11.7303 5.45625 10.4755L18.5327 2.9246C20.6681 1.6918 23.3098 1.6918 25.4672 2.9246L38.5437 10.4755C40.6791 11.7303 42 13.9979 42 16.4855Z"
+                  stroke="#4361EE"
+                  strokeWidth="3"
+                />
+                <path
+                  d="M22.011 21.8132C24.844 21.8132 27.1403 19.5165 27.1403 16.6837C27.1403 13.8508 24.844 11.5544 22.011 11.5544C19.1782 11.5544 16.8817 13.8508 16.8817 16.6837C16.8817 19.5165 19.1782 21.8132 22.011 21.8132Z"
+                  stroke="#4361EE"
+                  strokeWidth="3"
+                />
+                <path
+                  d="M30.8167 34.2734C30.8167 30.3108 26.8761 27.0967 22.0109 27.0967C17.1458 27.0967 13.2052 30.3108 13.2052 34.2734"
+                  stroke="#4361EE"
+                  strokeWidth="3"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 className="text-color1 font-medium text-19.4 leading-29.1">
+                Lorem ipsum has been the
+              </h4>
+              <p className="text-textColor3 max-w-[274px] leading-26">
+                when an unknown printer took a galley
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ export default function SectionFour() {
               </div>
             </div>
             <button className="mt-8 w-[385px] max-lg:max-w-[244px] max-lg:justify-center max-lg:mt-[30px]">
-              <h5 className="font-medium text-left max-lg:text-base max-lg:text-center">
+              <h5 className="lg:font-medium text-left max-lg:text-base max-lg:text-center max-lg:text-textColor3">
                 Lorem ipsum has been the industry standard dummy text
               </h5>
             </button>
@@ -145,7 +145,7 @@ export default function SectionFour() {
             </nav>
           </div>
           <div className="mt-[100px] max-w-[350px] text-textColor2 max-lg:mt-10 max-lg:max-w-full max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center">
-            <h4 className="text-textColor1 max-w-[254px] font-semibold text-19.4 leading-29.1 max-lg:max-w-[200px] max-lg:text-base max-lg:text-center">
+            <h4 className="text-textColor1 max-w-[254px] font-medium text-19.4 leading-29.1 max-lg:max-w-[200px] max-lg:text-base max-lg:text-center">
               Subscribe to our Newsletter!
             </h4>
             <div className="relative">
@@ -170,7 +170,7 @@ export default function SectionFour() {
               </div>
             </div>
             <div className="mt-8 flex flex-col justify-between h-[67px] max-lg:mb-[50px] max-lg:items-center max-lg:w-full ">
-              <h4 className="text-textColor1 font-semibold text-19.4 leading-29.1 max-lg:text-base">
+              <h4 className="text-textColor1 font-medium text-19.4 leading-29.1 max-lg:text-base">
                 Follow Us on
               </h4>
               <div className="flex gap-5 max-lg:gap-10">
