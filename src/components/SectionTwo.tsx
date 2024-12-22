@@ -116,8 +116,10 @@ export default function SectionTwo() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mb-[100px] w-full mt-[70px]">
-            lines
+          <div className="flex justify-center mb-[100px] w-full gap-[39px] mt-[70px]">
+            <div className=" w-[100px] h-0 border-[2px] border-white rounded-full" />
+            <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50" />
+            <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50" />
           </div>
         </div>
       </div>

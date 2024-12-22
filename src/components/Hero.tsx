@@ -57,7 +57,12 @@ export default function Hero() {
                 <div className="bg-ellipse-gradient -top-[40px] -right-[30px] rounded-full w-[60px] h-[60px] absolute rotate-[30deg]" />
               </div>
             </div>
-            <div className="text-black flex justify-center">sa</div>
+            <div className="mt-[11px] w-[515px] flex justify-between ">
+              <div className=" w-[100px] h-0 border-[2px] border-color1 rounded-full"></div>
+              <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50"></div>
+              <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50"></div>
+              <div className=" w-[100px] h-0 border-[2px] border-white rounded-full opacity-50"></div>
+            </div>
           </div>
         </div>
         <div className="shadow-formShadow flex flex-col w-full max-w-[420px] mt-[124px] rounded-[30px]">
