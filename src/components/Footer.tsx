@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-black w-full px-6 max-sm:hidden">
+    <footer className="bg-black w-full px-6">
       <div className="max-w-[1160px] w-full h-10 mx-auto flex flex-row justify-between items-center  text-textColor4">
         <p className="text-[16px] leading-26">
           © Company – All rights reserved

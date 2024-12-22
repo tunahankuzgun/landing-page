@@ -91,7 +91,7 @@ export default function SectionThree() {
                           <path
                             d="M15.9606 0.989746L0 38.2529H21.7241L30.1478 0.989746H15.9606ZM45.8128 0.989746L29.8522 38.2529H51.5764L60 0.989746H45.8128Z"
                             fill="#FFC700"
-                            fill-opacity="0.4"
+                            fillOpacity="0.4"
                           />
                         </svg>
                         <h4 className="mt-[18.4px] text-textColor2 text-19.4 h-[130px] leading-29.1 font-medium">
@@ -189,7 +189,7 @@ export default function SectionThree() {
                           <path
                             d="M15.9606 0.989746L0 38.2529H21.7241L30.1478 0.989746H15.9606ZM45.8128 0.989746L29.8522 38.2529H51.5764L60 0.989746H45.8128Z"
                             fill="#FFC700"
-                            fill-opacity="0.4"
+                            fillOpacity="0.4"
                           />
                         </svg>
                         <h4 className="mt-[18.4px] text-textColor2 text-19.4 h-[130px] leading-29.1 font-medium">
@@ -287,7 +287,7 @@ export default function SectionThree() {
                           <path
                             d="M15.9606 0.989746L0 38.2529H21.7241L30.1478 0.989746H15.9606ZM45.8128 0.989746L29.8522 38.2529H51.5764L60 0.989746H45.8128Z"
                             fill="#FFC700"
-                            fill-opacity="0.4"
+                            fillOpacity="0.4"
                           />
                         </svg>
                         <h4 className="mt-[18.4px] text-textColor2 text-19.4 h-[130px] leading-29.1 font-medium">

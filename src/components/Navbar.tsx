@@ -2,7 +2,7 @@ export default function Navbar() {
   return (
     <div className="h-[80px] relative bg-white flex flex-row justify-center items-center">
       <div className=" max-w-[1240px] w-full flex flex-row items-center justify-between">
-        <nav>
+        <nav className="max-lg:hidden">
           <ul className="flex flex-row gap-4">
             <li className="text-textColor2 text-base max-h-[37px] px-4 py-[13px] font-medium bg-[rgba(67,97,238,0.3)] rounded-[30px] flex items-center">
               <button type="button">
@@ -32,7 +32,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <div>
-          <div className="h-[50px] flex gap-2 items-center">
+          <div className="h-[50px] flex gap-2 items-center max-lg:ml-[30px]">
             <div className="w-[50px] h-[50px] rounded-full bg-[#3A0CA3] flex">
               <svg
                 className="w-6 h-6 m-auto"
@@ -55,7 +55,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 max-lg:hidden">
           <button
             type="button"
             className="text-textColor2 gap-[10px] h-[11px] items-center font-medium text-base flex"
@@ -105,6 +105,19 @@ export default function Navbar() {
               <h5>Add Listing</h5>
             </button>
           </div>
+        </div>
+        <div className="cursor-pointer mr-[30px] lg:hidden">
+          <svg
+            width="24"
+            height="22"
+            viewBox="0 0 24 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M24 0H0V2.18182H24V0Z" fill="#0B090A" />
+            <path d="M24 9.81818H0V12H24V9.81818Z" fill="#0B090A" />
+            <path d="M24 19.6364H0V21.8182H24V19.6364Z" fill="#0B090A" />
+          </svg>
         </div>
       </div>
     </div>

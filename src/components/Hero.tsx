@@ -131,8 +131,11 @@ export default function Hero() {
                 placeholder="New York, San Francisco, etc"
               />
               <div className="ml-10 flex relative mt-[30px] w-[340px]">
-                <select className="appearance-none pl-5  h-[59px] text-formText w-[340px] bg-formBackground rounded-[20px] focus:outline-none">
-                  <option className="" value="" selected disabled>
+                <select
+                  defaultValue={""}
+                  className="appearance-none pl-5  h-[59px] text-formText w-[340px] bg-formBackground rounded-[20px] focus:outline-none"
+                >
+                  <option className="" value="" disabled>
                     Select Property Type
                   </option>
                   <option value="residential">Residential</option>
@@ -154,8 +157,11 @@ export default function Hero() {
                 </svg>
               </div>
               <div className="ml-10 flex relative mt-[30px] w-[340px]">
-                <select className="appearance-none pl-5  h-[59px] text-formText w-[340px] bg-formBackground rounded-[20px] focus:outline-none">
-                  <option className="" value="" selected disabled>
+                <select
+                  defaultValue={""}
+                  className="appearance-none pl-5  h-[59px] text-formText w-[340px] bg-formBackground rounded-[20px] focus:outline-none"
+                >
+                  <option className="" value="" disabled>
                     Select Rooms
                   </option>
                   <option value="1">1</option>
