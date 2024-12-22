@@ -200,20 +200,70 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex flex-row flex-wrap justify-center mt-[30px] items-center gap-[30px]">
-        <div className="w-[360px] flex shadow-formShadow h-[100px] rounded-[50px] bg-white">
-          <div className="w-[287px] flex items-center justify-center">
-            <div className="w-[151px] text-black">image image image</div>
-            <h4 className="text-textColor2 font-medium text-19.4 w-[122px] leading-29.1 ">
+        <div className="w-[360px] flex justify-center  shadow-formShadow h-[100px] rounded-[50px] bg-white">
+          <div className="w-[287px] flex items-center gap-[10px] justify-center">
+            <div className="w-[155px] text-black flex space-x-[-10px]">
+              <div className="w-9 h-9">
+                <img
+                  className="rounded-full border-[2px] border-white w-9 h-9  object-cover"
+                  src="src\assets\images\customer1.jpeg"
+                />
+              </div>
+              <div className="w-9 h-9">
+                <img
+                  className="rounded-full border-[2px] border-white w-9 h-9 object-cover"
+                  src="src\assets\images\customer2.jpeg"
+                />
+              </div>
+              <div className="w-9 h-9">
+                <img
+                  className="rounded-full border-[2px] border-white w-9 h-9 object-cover"
+                  src="src\assets\images\customer3.jpeg"
+                />
+              </div>
+              <div className="w-9 h-9">
+                <img
+                  className="rounded-full border-[2px] border-white w-9 h-9 object-cover"
+                  src="src\assets\images\customer4.jpeg"
+                />
+              </div>
+              <div className="w-9 h-9">
+                <img
+                  className="rounded-full border-[2px] border-white w-9 h-9 object-cover"
+                  src="src\assets\images\customer5.jpeg"
+                />
+              </div>
+              <div className="w-9 h-9 relative flex items-center justify-center">
+                <div className="absolute inset-0 bg-[#000000B2] border-[2px]  border-white rounded-full" />
+                {/* TODO : Do bg-gradients as shadows */}
+                <img
+                  className="rounded-full border-[2px]  border-white w-9 h-9 object-cover"
+                  src="src\assets\images\customer5.jpeg"
+                />
+
+                <h4 className="text-white absolute text-center font-medium text-19.4 leading-29.1">
+                  +
+                </h4>
+              </div>
+            </div>
+            <h4 className="text-textColor2 font-semibold text-19.4 w-[122px] leading-29.1 ">
               72k+ Happy Customers
             </h4>
           </div>
         </div>
-        <div className="w-[320px] flex shadow-formShadow h-[100px] rounded-[50px] bg-white">
-          <div className="w-[287px] flex items-center justify-center">
-            <div className="w-[60px] h-[60px] text-[#D9D9D9]">image</div>
-            <h4 className="text-textColor2 font-medium  text-19.4 w-[174px] leading-29.1 ">
-              200+ New Listings Everyday!
-            </h4>
+        <div className="w-[320px] flex shadow-formShadow h-[100px] justify-center rounded-[50px] bg-white">
+          <div className="w-[244px] flex items-center justify-center gap-[10px]">
+            <div className="w-[60px] h-[60px]">
+              <img
+                className="rounded-full border-[2px] border-white h-[60px] w-[60px] object-cover"
+                src="src\assets\images\homeIcon.jpeg"
+              />
+            </div>
+            <div className=" w-[174px] ">
+              <h4 className="text-textColor2 font-semibold text-19.4leading-29.1">
+                200+ New Listings Everyday!
+              </h4>
+            </div>
           </div>
         </div>
       </div>
