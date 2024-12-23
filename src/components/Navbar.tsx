@@ -1,31 +1,35 @@
 export default function Navbar() {
+  const scrollToId = (elementID: string) => {
+    document.getElementById(elementID)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="h-[80px] relative lg:bg-white flex flex-row justify-center items-center">
       <div className=" max-w-[1300px] px-[30px] w-full flex flex-row items-center justify-between">
         <nav className="max-lg:hidden">
           <ul className="flex flex-row gap-4">
             <li className="text-textColor2 text-base max-h-[37px] px-4 py-[13px] font-medium bg-[rgba(67,97,238,0.3)] rounded-[30px] flex items-center">
-              <button type="button">
+              <button onClick={() => scrollToId("home")} type="button">
                 <h5>Home</h5>
               </button>
             </li>
-            <li className="text-base text-textColor2 rounded-[30px] flex items-center">
-              <button type="button">
+            <li className="text-base hover:underline text-textColor2 rounded-[30px] flex items-center">
+              <button onClick={() => scrollToId("about")} type="button">
                 <h5>About</h5>
               </button>
             </li>
-            <li className="text-base text-textColor2 rounded-[30px] flex items-center">
-              <button type="button">
+            <li className="text-base hover:underline text-textColor2 rounded-[30px] flex items-center">
+              <button onClick={() => scrollToId("listings")} type="button">
                 <h5>Listings</h5>
               </button>
             </li>
-            <li className="text-base text-textColor2 rounded-[30px] flex items-center">
-              <button type="button">
+            <li className="text-base hover:underline text-textColor2 rounded-[30px] flex items-center">
+              <button onClick={() => scrollToId("services")} type="button">
                 <h5>Services</h5>
               </button>
             </li>
-            <li className="text-base text-textColor2 rounded-[30px] flex items-center">
-              <button type="button">
+            <li className="text-base hover:underline text-textColor2 rounded-[30px] flex items-center">
+              <button onClick={() => scrollToId("blogs")} type="button">
                 <h5>Blogs</h5>
               </button>
             </li>

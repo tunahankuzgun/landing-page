@@ -516,7 +516,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="lg:flex justify-between flex-row">
+      <div id="listings" className="lg:flex justify-between flex-row">
         <div className="flex flex-col">
           <div className="text-color1 lg:mt-[200px] font-medium lg:text-19.4 text-left lg:leading-29.1 tracking-[0.15em] mt-[100px]">
             CHECKOUT OUR NEW

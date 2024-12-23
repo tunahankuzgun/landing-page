@@ -4,7 +4,7 @@ import "swiper/swiper-bundle.css";
 
 export default function SectionThree() {
   return (
-    <div className="relative mx-auto bg-white">
+    <div id="services" className="relative mx-auto bg-white">
       <div className="relative px-[30px] w-full max-w-[1180px] mx-auto">
         <div className="lg:flex flex-row justify-between">
           <div className="">

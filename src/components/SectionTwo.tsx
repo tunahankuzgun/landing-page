@@ -4,7 +4,7 @@ import "swiper/swiper-bundle.css";
 
 export default function SectionTwo() {
   return (
-    <div className="relative mx-auto bg-primaryColour">
+    <div id="blogs" className="relative mx-auto bg-primaryColour">
       <div className="relative px-[30px] w-full max-w-[1180px] mx-auto">
         <div className="w-full flex flex-col max-lg:items-start">
           <div className=" text-19.4 w-full justify-center leading-29.1 text-center font-medium tracking-[0.15em] mt-[110px] max-lg:mt-[100px] max-lg:text-base">
