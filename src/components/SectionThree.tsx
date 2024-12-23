@@ -49,7 +49,7 @@ export default function SectionThree() {
               </div>
             </div>
           </div>
-          <div className="max-lg:hidden mt-[160px]">
+          <div className="max-lg:hidden mr-[180px]  mt-[160px]">
             <div className="w-[333px] flex h-[358px] mb-[104px] z-10 relative">
               <div className="bg-ellipse-gradient -top-[30px] -left-[30px] rounded-full w-[60px] h-[60px] absolute opacity-50 rotate-[-30deg] z-[-1]" />
               <div className="flex shadow-section3Shadow rounded-[30px] bg-white">

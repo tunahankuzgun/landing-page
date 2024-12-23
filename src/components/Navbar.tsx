@@ -1,7 +1,11 @@
+import { useState } from "react";
+
 export default function Navbar() {
   const scrollToId = (elementID: string) => {
     document.getElementById(elementID)?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const [menu, setMenu] = useState(false);
 
   return (
     <div className="h-[80px] relative lg:bg-white flex flex-row justify-center items-center">
@@ -110,20 +114,102 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        <div className="cursor-pointer lg:hidden">
-          <svg
-            width="24"
-            height="22"
-            viewBox="0 0 24 22"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M24 0H0V2.18182H24V0Z" fill="#0B090A" />
-            <path d="M24 9.81818H0V12H24V9.81818Z" fill="#0B090A" />
-            <path d="M24 19.6364H0V21.8182H24V19.6364Z" fill="#0B090A" />
-          </svg>
+        <div
+          onClick={() => setMenu((prev) => !prev)}
+          className="cursor-pointer lg:hidden"
+        >
+          {menu ? (
+            <svg
+              width="24"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6L18 18M6 18L18 6"
+                stroke="#0B090A"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          ) : (
+            <svg
+              width="24"
+              height="22"
+              viewBox="0 0 24 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M24 0H0V2.18182H24V0Z" fill="#0B090A" />
+              <path d="M24 9.81818H0V12H24V9.81818Z" fill="#0B090A" />
+              <path d="M24 19.6364H0V21.8182H24V19.6364Z" fill="#0B090A" />
+            </svg>
+          )}
         </div>
       </div>
+      {menu && (
+        <div className="absolute top-[80px] left-0 w-full bg-white z-50 lg:hidden shadow-md">
+          <ul className="flex flex-col gap-4 p-4">
+            <li>
+              <button
+                className="text-textColor2 text-base"
+                onClick={() => {
+                  scrollToId("home");
+                  setMenu(false);
+                }}
+              >
+                Home
+              </button>
+            </li>
+            <li>
+              <button
+                className="text-textColor2 text-base"
+                onClick={() => {
+                  scrollToId("about");
+                  setMenu(false);
+                }}
+              >
+                About
+              </button>
+            </li>
+            <li>
+              <button
+                className="text-textColor2 text-base"
+                onClick={() => {
+                  scrollToId("listings");
+                  setMenu(false);
+                }}
+              >
+                Listings
+              </button>
+            </li>
+            <li>
+              <button
+                className="text-textColor2 text-base"
+                onClick={() => {
+                  scrollToId("services");
+                  setMenu(false);
+                }}
+              >
+                Services
+              </button>
+            </li>
+            <li>
+              <button
+                className="text-textColor2 text-base"
+                onClick={() => {
+                  scrollToId("blogs");
+                  setMenu(false);
+                }}
+              >
+                Blogs
+              </button>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
