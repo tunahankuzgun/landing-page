@@ -3,7 +3,7 @@ export default function SectionFour() {
     <div className="relative mx-auto bg-transparentBg ">
       <div className="relative w-full max-w-[1160px] mx-auto max-lg:max-w-full">
         <div className="flex flex-row justify-between max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:w-full">
-          <div className="mt-[82px] max-w-[285px] text-textColor2 max-lg:max-w-full max-lg:justify-center max-lg:mt-[60px] ">
+          <div className="mt-[82px] max-w-[285px] text-textColor2 max-lg:max-w-full max-lg:justify-center max-lg:mt-[60px] lg:mr-4 ">
             <div className="flex h-[50px] gap-2 items-center max-lg:w-full max-lg:justify-center">
               <div className="w-[50px] h-[50px] rounded-full items-center flex justify-center bg-primaryColour">
                 <svg
@@ -22,8 +22,11 @@ export default function SectionFour() {
                   />
                 </svg>
               </div>
-              <div className="font-semibold text-[20px] leading-[30px] max-lg: ">
+              <div className="font-semibold text-[20px] leading-[30px] max-lg:hidden">
                 Rezilla
+              </div>
+              <div className="lg:hidden font-semibold text-[20px] leading-[30px] max-lg: ">
+                Logo
               </div>
             </div>
             <button className="mt-8 w-[385px] max-lg:max-w-[244px] max-lg:justify-center max-lg:mt-[30px]">

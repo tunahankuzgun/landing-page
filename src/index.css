@@ -42,3 +42,15 @@ body {
   background-color: #808080;
   opacity: 1 !important;
 }
+
+.swiper4-pagination {
+  height: 4px;
+  background-color: #aaaaaa;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.swiper4-paginationActive {
+  height: 4px;
+  background-color: #808080;
+  opacity: 1 !important;
+}

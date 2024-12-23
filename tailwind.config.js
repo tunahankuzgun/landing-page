@@ -30,13 +30,8 @@ export default {
           " linear-gradient(180deg, #4361EE 0%, rgba(67, 97, 238, 0) 100%)",
         "photo-gradient":
           "linear-gradient(0deg, #D9D9D9, #D9D9D9),linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)",
-        "custom-gradient-2": `
-          linear-gradient(0deg, #D9D9D9, #D9D9D9),
-          linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)
-        `,
-        "layered-gradient": `
-          linear-gradient(0deg, #FFFFFF, #FFFFFF),
-          linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))`,
+        "custom-gradient-2": 
+        "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)",
       },
       boxShadow: {
         formShadow: "10px 30px 50px 0px rgba(0, 0, 0, 0.05)",
